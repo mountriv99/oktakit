@@ -3,6 +3,7 @@ require 'oktakit/response/raise_error'
 require 'oktakit/client/admin_roles'
 require 'oktakit/client/apps'
 require 'oktakit/client/events'
+require 'oktakit/client/event_hooks'
 require 'oktakit/client/factors'
 require 'oktakit/client/groups'
 require 'oktakit/client/identity_providers'
@@ -15,6 +16,7 @@ module Oktakit
     include AdminRoles
     include Apps
     include Events
+	include EventHooks
     include Factors
     include Groups
     include IdentityProviders
